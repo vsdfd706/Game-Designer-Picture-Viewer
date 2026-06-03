@@ -8,7 +8,7 @@ echo Installing dependencies...
 py -m pip install Pillow pyinstaller pyglet PyOpenGL PyOpenGL_accelerate
 
 echo Building EXE...
-py -m PyInstaller --onefile --noconsole --name GameView ^
+py -3.11 -m PyInstaller --onefile --noconsole --name GameView ^
     --icon GameView.ico ^
     --hidden-import pyglet ^
     --hidden-import pyglet.gl ^
